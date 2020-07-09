@@ -29,6 +29,7 @@
     a {
       @include standardBtn;
       width: 320px;
+      flex-shrink: 0;
     }
 
     p {
@@ -43,10 +44,9 @@
 
   #jumboRight {
     width: calc(100% / 2);
-    text-align: center;
+    text-align: right;
     img {
-      padding: 25px;
-      width: 100%;
+      width: 90%;
     }
   }
 }
