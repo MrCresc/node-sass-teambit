@@ -1,0 +1,52 @@
+#jumbotron {
+  @include paddingUpDown80px;
+  @include flexVerticalAlign;
+
+  #jumboLeft {
+    width: calc(100% / 2);
+
+    h1 {
+      font-size: 70px;
+      font-weight: bolder;
+      line-height: 100px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-top: 20px;
+      line-height: 50px;
+    }
+
+    .btnContainer {
+      @include flexVerticalAlign;
+      margin-top: 60px;
+
+      p {
+        margin: 0 5px;
+      }
+    }
+
+    a {
+      @include standardBtn;
+      width: 320px;
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 30px;
+
+      i {
+        cursor: pointer;
+      }
+    }
+  }
+
+  #jumboRight {
+    width: calc(100% / 2);
+    text-align: center;
+    img {
+      padding: 25px;
+      width: 100%;
+    }
+  }
+}

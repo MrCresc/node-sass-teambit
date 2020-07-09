@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  color: #58402c;
+}
+
+a {
+  text-decoration: none;
+  color: #58402c;
+}
+
+.wrapper80 {
+  margin: auto;
+  width: 80%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #58402c;
+  height: 100px;
+  padding: 10px 0;
+}
+
+nav #navLeft {
+  display: flex;
+  align-items: center;
+  width: calc(100% / 2);
+}
+
+nav #navLeft #logo {
+  margin-left: 15px;
+  width: 150px;
+  cursor: pointer;
+}
+
+nav #navRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+nav #navRight a {
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+nav #navRight i {
+  padding: 0 5px;
+}
+
+nav #navRight .btn {
+  display: flex;
+  align-items: center;
+  color: #2c4792;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #2c4792;
+}
+
+nav #navRight .btn img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+nav #navRight .btn:hover {
+  background-color: #5776cd;
+  color: black;
+}
+
+#jumbotron {
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+}
+
+#jumbotron #jumboLeft {
+  width: calc(100% / 2);
+}
+
+#jumbotron #jumboLeft h1 {
+  font-size: 70px;
+  font-weight: bolder;
+  line-height: 100px;
+}
+
+#jumbotron #jumboLeft h2 {
+  font-size: 32px;
+  margin-top: 20px;
+  line-height: 50px;
+}
+
+#jumbotron #jumboLeft .btnContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#jumbotron #jumboLeft .btnContainer p {
+  margin: 0 5px;
+}
+
+#jumbotron #jumboLeft a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px 15px;
+  background-color: #2c4792;
+  border-radius: 10px;
+  width: 320px;
+}
+
+#jumbotron #jumboLeft a img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+#jumbotron #jumboLeft a:hover {
+  background-color: #5776cd;
+  color: black;
+}
+
+#jumbotron #jumboLeft p {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+#jumbotron #jumboLeft p i {
+  cursor: pointer;
+}
+
+#jumbotron #jumboRight {
+  width: calc(100% / 2);
+  text-align: center;
+}
+
+#jumbotron #jumboRight img {
+  padding: 25px;
+  width: 100%;
+}
+

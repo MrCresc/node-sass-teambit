@@ -1,0 +1,36 @@
+nav {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $textColor;
+  height: 100px;
+  padding: 10px 0;
+
+  #navLeft {
+    @include flexVerticalAlign;
+    width: calc(100% / 2);
+
+    #logo {
+      margin-left: 15px;
+      width: 150px;
+      cursor: pointer;
+    }
+  }
+
+  #navRight {
+    @include flexVerticalAlign;
+    justify-content: flex-end;
+    flex-shrink: 0;
+
+    a {
+      @include boldAnchor
+    }
+
+    i {
+      padding: 0 5px;
+    }
+
+    .btn {
+      @include signUpBtn;
+    }
+  }
+}
