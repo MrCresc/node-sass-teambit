@@ -19,6 +19,49 @@ a {
   width: 80%;
 }
 
+.btnContainerWrapper .btnContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.btnContainerWrapper .btnContainer p {
+  margin: 0 5px;
+}
+
+.btnContainerWrapper a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px 15px;
+  background-color: #2c4792;
+  border-radius: 10px;
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.btnContainerWrapper a img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.btnContainerWrapper a:hover {
+  background-color: #5776cd;
+  color: black;
+}
+
+.btnContainerWrapper p {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.btnContainerWrapper p i {
+  cursor: pointer;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -140,6 +183,123 @@ nav #navRight .btn:hover {
   font-weight: bolder;
 }
 
+#learnMore {
+  padding: 20px 10px;
+}
+
+#learnMore .learnMoreFlex,
+#learnMore .learnMoreFlexReverse {
+  display: flex;
+  align-items: center;
+}
+
+#learnMore .learnMoreFlex .learnMorePreview,
+#learnMore .learnMoreFlexReverse .learnMorePreview {
+  flex-basis: calc(100% / 2);
+}
+
+#learnMore .learnMoreFlex .learnMorePreview img,
+#learnMore .learnMoreFlexReverse .learnMorePreview img {
+  width: 100%;
+}
+
+#learnMore .learnMoreFlex .learnMoreOverview,
+#learnMore .learnMoreFlexReverse .learnMoreOverview {
+  flex-basis: calc(100% / 4);
+  padding: 20px;
+}
+
+#learnMore .learnMoreFlex .learnMoreOverview h2,
+#learnMore .learnMoreFlexReverse .learnMoreOverview h2 {
+  font-size: 35px;
+  line-height: 40px;
+}
+
+#learnMore .learnMoreFlex .learnMoreOverview p,
+#learnMore .learnMoreFlexReverse .learnMoreOverview p {
+  padding: 60px 0 40px;
+  font-size: 25px;
+}
+
+#learnMore .learnMoreFlex .learnMoreOverview a,
+#learnMore .learnMoreFlexReverse .learnMoreOverview a {
+  color: #2c4792;
+  font-size: 25px;
+}
+
+#learnMore .learnMoreFlex .learnMoreOverview img,
+#learnMore .learnMoreFlexReverse .learnMoreOverview img {
+  margin: 60px 0;
+  width: 100%;
+}
+
+#learnMore .learnMoreFlexReverse,
+#learnMore .learnMoreFlexReverseReverse {
+  flex-direction: row-reverse;
+}
+
+#learnMore .learnMoreFlexReverse .learnMoreOverview,
+#learnMore .learnMoreFlexReverseReverse .learnMoreOverview {
+  text-align: right;
+}
+
+#getStarted {
+  padding: 50px;
+  background-color: #fee7d1;
+  text-align: center;
+}
+
+#getStarted #wrapperGetStarted {
+  margin: auto;
+  width: 650px;
+}
+
+#getStarted #wrapperGetStarted h2 {
+  display: inline-block;
+  font-size: 50px;
+  padding-bottom: 40px;
+  line-height: 80px;
+}
+
+#getStarted #wrapperGetStarted #quote {
+  text-align: left;
+  padding: 30px;
+  position: relative;
+  width: 100%;
+  background-color: white;
+  border: 2px solid #2c4792;
+  color: black;
+  border-radius: 15px;
+}
+
+#getStarted #wrapperGetStarted #quote i {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  font-size: 50px;
+  color: #2c4792;
+}
+
+#getStarted #wrapperGetStarted #quote p {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+#getStarted #wrapperGetStarted #quote img {
+  width: 80px;
+  margin-right: 25px;
+}
+
+#getStarted #wrapperGetStarted #quote #credits {
+  display: flex;
+  align-items: center;
+}
+
+#getStarted #wrapperGetStarted #quote #credits h4 {
+  margin-top: 15px;
+  color: #2c4792;
+}
+
 #jumbotron {
   padding: 80px 0;
   display: flex;
@@ -162,49 +322,6 @@ nav #navRight .btn:hover {
   line-height: 50px;
 }
 
-#jumbotron #jumboLeft .btnContainer {
-  display: flex;
-  align-items: center;
-  margin-top: 60px;
-}
-
-#jumbotron #jumboLeft .btnContainer p {
-  margin: 0 5px;
-}
-
-#jumbotron #jumboLeft a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
-  font-size: 25px;
-  padding: 10px 15px;
-  background-color: #2c4792;
-  border-radius: 10px;
-  width: 320px;
-  flex-shrink: 0;
-}
-
-#jumbotron #jumboLeft a img {
-  width: 30px;
-  margin-right: 5px;
-}
-
-#jumbotron #jumboLeft a:hover {
-  background-color: #5776cd;
-  color: black;
-}
-
-#jumbotron #jumboLeft p {
-  font-size: 20px;
-  margin-top: 30px;
-}
-
-#jumbotron #jumboLeft p i {
-  cursor: pointer;
-}
-
 #jumbotron #jumboRight {
   width: calc(100% / 2);
   text-align: right;
@@ -212,5 +329,60 @@ nav #navRight .btn:hover {
 
 #jumbotron #jumboRight img {
   width: 90%;
+}
+
+footer {
+  padding: 100px 0;
+}
+
+footer .wrapper80 {
+  display: flex;
+}
+
+footer .wrapper80 #footerStart {
+  display: flex;
+  align-items: flex-start;
+  width: 30%;
+}
+
+footer .wrapper80 #footerStart img {
+  width: 200px;
+}
+
+footer .wrapper80 #footerStart p {
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+footer .wrapper80 #footerStart p span {
+  font-size: 30px;
+  color: #2c4792;
+}
+
+footer .wrapper80 #footerEnd {
+  display: flex;
+  width: 70%;
+}
+
+footer .wrapper80 #footerEnd ul {
+  padding-left: 30px;
+  font-size: 35px;
+  font-weight: bold;
+  list-style: none;
+  flex-basis: 20%;
+}
+
+footer .wrapper80 #footerEnd ul .listItemTitle {
+  padding-bottom: 20px;
+}
+
+footer .wrapper80 #footerEnd ul li {
+  padding: 5px 0;
+}
+
+footer .wrapper80 #footerEnd ul a {
+  font-size: 20px;
 }
 

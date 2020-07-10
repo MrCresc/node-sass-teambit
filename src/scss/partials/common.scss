@@ -69,3 +69,29 @@ a {
 @mixin paddingUpDown80px {
   padding: 80px 0;
 }
+
+.btnContainerWrapper {
+  .btnContainer {
+    @include flexVerticalAlign;
+    margin-top: 60px;
+
+    p {
+      margin: 0 5px;
+    }
+  }
+
+  a {
+    @include standardBtn;
+    width: 320px;
+    flex-shrink: 0;
+  }
+
+  p {
+    font-size: 20px;
+    margin-top: 30px;
+
+    i {
+      cursor: pointer;
+    }
+  }
+}
