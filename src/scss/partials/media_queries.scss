@@ -1,0 +1,112 @@
+@media screen and (max-width: 1199px) {
+
+  .btnContainerWrapper {
+    .btnContainer {
+      justify-content: center;
+    }
+    a {
+      font-size: 18px;
+      width: calc(100% / 2);
+    }
+  }
+
+  nav {
+    #navRight {
+      display: none;
+    }
+
+    .mobileMenu {
+      font-size: 50px;
+      display: flex;
+      cursor: pointer;
+    }
+  }
+
+  #jumbotron {
+    text-align: center;
+    flex-wrap: wrap;
+    #jumboLeft {
+      h1 {
+        font-size: 50px;
+      }
+      h2 {
+        font-size: 25px;
+      }
+    }
+    #jumboLeft,#jumboRight{
+      width: 100%;
+    }
+  }
+
+  main {
+    #slogan {
+      .flexSlogan {
+        flex-wrap: wrap;
+        #sloganLeft,#sloganCenter,#sloganRight {
+          width: 100%;
+        }
+      }
+      .flexSloganAloneTop,.flexSloganAloneBottom {
+        img {
+          max-width: 500px;
+          width: 100%;
+        }
+      }
+    }
+
+    #learnMore {
+      .learnMoreFlex,.learnMoreFlexReverse {
+        flex-wrap: wrap;
+        .learnMorePreview {
+          text-align: center;
+          flex-basis: 100%;
+          img {
+            width: 85%;
+          }
+        }
+        .learnMoreOverview {
+          text-align: center;
+          flex-basis: 100%;
+          img {
+            width: 85%;
+          }
+        }
+      }
+    }
+
+    #getStarted {
+      #wrapperGetStarted {
+        width: 100%;
+      }
+    }
+  }
+
+  footer {
+    .wrapper80 {
+      flex-wrap: wrap;
+      #footerStart {
+        width: 100%;
+      }
+      #footerEnd {
+        width: 100%;
+        flex-wrap: wrap;
+        ul {
+          padding: 40px 0;
+          flex-basis: calc(100% / 3)
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    .wrapper80 {
+      #footerEnd {
+        ul {
+          flex-basis: calc(100% / 2)
+        }
+      }
+    }
+  }
+}

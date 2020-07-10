@@ -36,10 +36,9 @@ a {
   color: white;
   font-weight: bold;
   font-size: 25px;
-  padding: 10px 15px;
+  padding: 10px 20px;
   background-color: #2c4792;
   border-radius: 10px;
-  width: 320px;
   flex-shrink: 0;
 }
 
@@ -120,6 +119,10 @@ nav #navRight .btn:hover {
   color: black;
 }
 
+nav .mobileMenu {
+  display: none;
+}
+
 #slogan {
   background-color: #fee7d1;
   padding: 80px 0;
@@ -146,7 +149,7 @@ nav #navRight .btn:hover {
 }
 
 #slogan .flexSloganAloneTop img {
-  height: 500px;
+  width: 500px;
 }
 
 #slogan .flexSloganAloneBottom {
@@ -156,7 +159,7 @@ nav #navRight .btn:hover {
 }
 
 #slogan .flexSloganAloneBottom img {
-  height: 500px;
+  width: 500px;
 }
 
 #slogan .flexSloganAloneBottom h2 {
@@ -300,6 +303,10 @@ nav #navRight .btn:hover {
   color: #2c4792;
 }
 
+#getStarted #wrapperGetStarted .btnContainer {
+  justify-content: center;
+}
+
 #jumbotron {
   padding: 80px 0;
   display: flex;
@@ -346,7 +353,8 @@ footer .wrapper80 #footerStart {
 }
 
 footer .wrapper80 #footerStart img {
-  width: 200px;
+  width: 60px;
+  flex-shrink: 0;
 }
 
 footer .wrapper80 #footerStart p {
@@ -384,5 +392,115 @@ footer .wrapper80 #footerEnd ul li {
 
 footer .wrapper80 #footerEnd ul a {
   font-size: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .btnContainerWrapper .btnContainer {
+    justify-content: center;
+  }
+
+  .btnContainerWrapper a {
+    font-size: 18px;
+    width: calc(100% / 2);
+  }
+
+  nav #navRight {
+    display: none;
+  }
+
+  nav .mobileMenu {
+    font-size: 50px;
+    display: flex;
+    cursor: pointer;
+  }
+
+  #jumbotron {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  #jumbotron #jumboLeft h1 {
+    font-size: 50px;
+  }
+
+  #jumbotron #jumboLeft h2 {
+    font-size: 25px;
+  }
+
+  #jumbotron #jumboLeft,
+  #jumbotron #jumboRight {
+    width: 100%;
+  }
+
+  main #slogan .flexSlogan {
+    flex-wrap: wrap;
+  }
+
+  main #slogan .flexSlogan #sloganLeft,
+  main #slogan .flexSlogan #sloganCenter,
+  main #slogan .flexSlogan #sloganRight {
+    width: 100%;
+  }
+
+  main #slogan .flexSloganAloneTop img,
+  main #slogan .flexSloganAloneBottom img {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  main #learnMore .learnMoreFlex,
+  main #learnMore .learnMoreFlexReverse {
+    flex-wrap: wrap;
+  }
+
+  main #learnMore .learnMoreFlex .learnMorePreview,
+  main #learnMore .learnMoreFlexReverse .learnMorePreview {
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  main #learnMore .learnMoreFlex .learnMorePreview img,
+  main #learnMore .learnMoreFlexReverse .learnMorePreview img {
+    width: 85%;
+  }
+
+  main #learnMore .learnMoreFlex .learnMoreOverview,
+  main #learnMore .learnMoreFlexReverse .learnMoreOverview {
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  main #learnMore .learnMoreFlex .learnMoreOverview img,
+  main #learnMore .learnMoreFlexReverse .learnMoreOverview img {
+    width: 85%;
+  }
+
+  main #getStarted #wrapperGetStarted {
+    width: 100%;
+  }
+
+  footer .wrapper80 {
+    flex-wrap: wrap;
+  }
+
+  footer .wrapper80 #footerStart {
+    width: 100%;
+  }
+
+  footer .wrapper80 #footerEnd {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  footer .wrapper80 #footerEnd ul {
+    padding: 40px 0;
+    flex-basis: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer .wrapper80 #footerEnd ul {
+    flex-basis: calc(100% / 2);
+  }
 }
 

@@ -53,7 +53,7 @@ a {
   color: white;
   font-weight: bold;
   font-size: 25px;
-  padding: 10px 15px;
+  padding: 10px 20px;
   background-color: $secondaryColor;
   border-radius: 10px;
   img {
@@ -82,7 +82,6 @@ a {
 
   a {
     @include standardBtn;
-    width: 320px;
     flex-shrink: 0;
   }
 
