@@ -23,6 +23,10 @@ a {
   display: flex !important;
 }
 
+.noScroll {
+  overflow: hidden;
+}
+
 @mixin flexVerticalAlign {
   display: flex;
   align-items: center;
