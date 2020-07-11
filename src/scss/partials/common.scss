@@ -19,6 +19,10 @@ a {
   width: 80%;
 }
 
+.flex {
+  display: flex !important;
+}
+
 @mixin flexVerticalAlign {
   display: flex;
   align-items: center;

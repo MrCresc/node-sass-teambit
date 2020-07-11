@@ -6,13 +6,35 @@
     }
     a {
       font-size: 18px;
-      width: calc(100% / 2);
     }
   }
 
   nav {
     #navRight {
       display: none;
+      padding: 100px;
+      background-color: white;
+      width: 100%;
+      height: calc(100vh - 100px);
+      position: absolute;
+      top: 100px;
+      left: 0;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: space-around;
+      flex-shrink: none;
+
+      a {
+        margin: 15px 0;
+      }
+
+      i {
+        display: none;
+      }
+
+      .btn {
+        @include signUpBtn;
+      }
     }
 
     .mobileMenu {
@@ -21,6 +43,8 @@
       cursor: pointer;
     }
   }
+
+
 
   #jumbotron {
     text-align: center;
@@ -100,12 +124,32 @@
 }
 
 @media screen and (max-width: 767px) {
+  .btnContainerWrapper {
+    .btnContainer {
+      justify-content: center;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
+
   footer {
     .wrapper80 {
       #footerEnd {
         ul {
           flex-basis: calc(100% / 2)
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .btnContainerWrapper {
+    .btnContainer {
+      flex-wrap: wrap;
+      a {
+        width: 100%;
       }
     }
   }
