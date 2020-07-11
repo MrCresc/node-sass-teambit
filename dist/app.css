@@ -101,6 +101,7 @@ nav #navRight {
   align-items: center;
   justify-content: flex-end;
   flex-shrink: 0;
+  margin-right: 15px;
 }
 
 nav #navRight a {

@@ -27,7 +27,7 @@ nav {
     @include flexVerticalAlign;
     justify-content: flex-end;
     flex-shrink: 0;
-
+    margin-right: 15px;
     a {
       @include boldAnchor
     }
